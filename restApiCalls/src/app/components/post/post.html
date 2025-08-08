@@ -1,0 +1,11 @@
+<p>post works!</p>
+
+<button (click)="_restdataser.getPostData()">Post It</button>
+<table border='1'>
+<tr *ngFor ="let f of _restdataser.postdata_fromweb">
+    <td>{{f.id}}</td>
+    <td>{{f.title}}</td>
+    <td>{{f.body}}</td>
+
+</tr>
+</table>
