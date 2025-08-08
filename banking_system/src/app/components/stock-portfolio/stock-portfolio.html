@@ -1,0 +1,31 @@
+<div class="summary">
+  <p><strong>Total Investment:</strong> {{ totalInvestment | currency :"INR" }}</p>
+  <p><strong>Portfolio Value:</strong> {{ portfolioValue | currency :"INR" }}</p>
+  <p><strong>Status:</strong> {{ overallStatus }}</p>
+</div>
+ 
+<table class="portfolio-table">
+  <thead>
+    <tr>
+      <th>Stock ID</th>
+      <th>Qty</th>
+      <th>Purchase Price</th>
+      <th>Current Price</th>
+      <th>Invested</th>
+      <th>Current</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stock of stockList">
+      <td>{{ stock.stockId }}</td>
+      <td>{{ stock.qty }}</td>
+      <td>{{ stock.purchasePrice | currency :"INR" }}</td>
+      <td>{{ stock.currentPrice | currency :"INR" }}</td>
+      <td>{{ stock.invested | currency: "INR" }}</td>
+      <td>{{ stock.current | currency :"INR" }}</td>
+      <td [ngClass]="stock.status.toLowerCase()">{{ stock.status }}</td>
+    </tr>
+  </tbody>
+</table>
+ 

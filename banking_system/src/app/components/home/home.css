@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  background-color: #004080; /* Dark blue background */
+  color: #ffffff;            /* White font color */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+}
+h4{
+    background-color: rgb(210, 40, 21);
+}
+
+.services{
+  background-color: rgb(210, 40, 21);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;
+}
+ 
+.banner-img {
+  width: 405px;
+  height: 237px;
+  object-fit: cover;
+  border-radius: 8px;
+}

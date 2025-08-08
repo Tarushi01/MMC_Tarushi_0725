@@ -1,0 +1,28 @@
+.summary {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+ 
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+.portfolio-table th,
+.portfolio-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+ 
+.profit {
+  color: rgb(91, 7, 147);
+  font-weight: bold;
+}
+ 
+.loss {
+  color: rgb(240, 138, 138);
+  font-weight: bold;
+}
+ 
+ 
