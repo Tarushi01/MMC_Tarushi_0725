@@ -1,0 +1,14 @@
+h3{
+    text-align: center;
+}
+p{
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+    color: #a80a61;
+}
+
+div{
+    background-color: beige;
+    color: rgb(8, 16, 110);
+}
