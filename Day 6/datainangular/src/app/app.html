@@ -1,0 +1,39 @@
+<div class="center-container">
+  <h1>Welcome to Data</h1>
+</div>
+<div class>
+
+  <h3>App Name: {{ appName}}</h3>
+  <ol>
+    <li *ngFor="let type of type_of_data">{{ type }}</li>
+  </ol>
+</div>
+<div>
+<h3>Product Details</h3>
+ <h1>Product Id: {{productDetails.pId}}</h1>
+ <h1>Product Name: {{productDetails.pName}}</h1>
+ <h1>Product Price: {{productDetails.pPrice}}</h1>
+ <h1>Product Quantity: {{productDetails.pQty}}</h1>
+ <h1>Product Category: {{productDetails.pCategory}}</h1>
+
+ <table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Category</th>
+    </tr>
+    </thead>
+   <tbody>
+      <tr *ngFor="let product of productList">
+        <td>{{ product.pId }}</td>
+        <td>{{ product.pName }}</td>
+        <td>{{ product.pPrice }}</td>
+        <td>{{ product.pQty }}</td>
+        <td>{{ product.pCategory }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

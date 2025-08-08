@@ -1,0 +1,41 @@
+<h1>Pipes in Angular</h1>
+<h2>{{firstName | uppercase}}</h2>
+<h2>{{lastName | lowercase}}</h2>
+<h2>{{salary | currency : 'INR'}}</h2>
+<h2>{{salary * 12| currency : 'INR'}}</h2>
+<h2>{{product | json}}</h2>
+<h2>{{orderData | date}}</h2>
+
+<hr/>
+
+<h3>
+  {{firstName | greetings}}
+</h3>
+
+<h2>Employee List</h2>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Emp No</th>
+      <th>Emp Name</th>
+      <th>Designation</th>
+      <th>Gender</th>
+      <th>Salary</th>
+      <th>Permanent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employeeList">
+      <td>{{ emp.empNo }}</td>
+      <td>{{ emp.empName | gendergreeting : emp.empGender }}</td>
+      <td>{{ emp.empDesignation }}</td>
+      <td>{{ emp.empGender }}</td>
+      <td>{{ emp.empSalary | currency:'USD' }}</td>
+      <td>{{ emp.empIsPermanent ? 'Yes' : 'No' }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
