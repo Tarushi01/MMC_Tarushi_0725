@@ -1,0 +1,10 @@
+<h2>Update Product</h2>
+
+<form (ngSubmit)="updateProduct()">
+  <input type="text" [(ngModel)]="product._id" name="_id" placeholder="Product ID" required>
+  <input type="text" [(ngModel)]="product.pNmae" name="pNmae" placeholder="Name">
+  <input type="number" [(ngModel)]="product.pPrice" name="pPrice" placeholder="Price">
+  <input type="text" [(ngModel)]="product.pBrand" name="pBrand" placeholder="Brand">
+  <input type="text" [(ngModel)]="product.pIsInStock" name="pIsInStock" placeholder="In Stock?">
+  <button type="submit">Update Product</button>
+</form>
